@@ -1,0 +1,208 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name IBMMobileFoundationSwift
+import Foundation
+import IBMMobileFirstPlatformFoundation
+@_exported import IBMMobileFoundationSwift
+import Swift
+import _Concurrency
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class WLResourceRequestSwift : ObjectiveC.NSObject {
+  public static let WLHttpMethodGet: Swift.String
+  public static let WLHttpMethodPost: Swift.String
+  public static let WLHttpMethodPut: Swift.String
+  public static let WLHttpMethodDelete: Swift.String
+  public var resourceInstance: IBMMobileFirstPlatformFoundation.WLResourceRequest?
+  public init(url: Foundation.URL, method: Swift.String)
+  public init(url: Foundation.URL, method: Swift.String, scope: Swift.String)
+  public init(url: Foundation.URL, method: Swift.String, timeout: Foundation.TimeInterval)
+  public init(url: Foundation.URL, method: Swift.String, timeout: Foundation.TimeInterval, scope: Swift.String)
+  public func setQueryParameterValue(parameterValue: Swift.String, forName: Swift.String)
+  public func getQueryString() -> Swift.String
+  public func headerNames() -> Swift.Array<Any>
+  public func headers(forName: Swift.String) -> Swift.Array<Any>
+  public func header(forName: Swift.String) -> Swift.String
+  public func setHeaderValue(value: ObjectiveC.NSObject, forName: Swift.String)
+  public func addHeaderValue(value: ObjectiveC.NSObject, forName: Swift.String)
+  public func removeHeaders(forName: Swift.String)
+  public func send(onCompletion: @escaping (IBMMobileFoundationSwift.WLResponseSwift?, Swift.Error?) -> Swift.Void)
+  public func send(withQueue: Dispatch.DispatchQueue, onCompletion: @escaping (IBMMobileFoundationSwift.WLResponseSwift?, Swift.Error?) -> Swift.Void)
+  public func send(withDelegate: Any)
+  public func send(responseQueue: Dispatch.DispatchQueue, withDelegate: Any)
+  public func send(withBody: Swift.String, onCompletion: @escaping (IBMMobileFoundationSwift.WLResponseSwift?, Swift.Error?) -> Swift.Void)
+  public func send(withBody: Swift.String, responseQueue: Dispatch.DispatchQueue, onCompletion: @escaping (IBMMobileFoundationSwift.WLResponseSwift?, Swift.Error?) -> Swift.Void)
+  public func send(withBody: Swift.String, delegate: Any)
+  public func send(withBody: Swift.String, responseQueue: Dispatch.DispatchQueue, delegate: Any)
+  public func send(withFormParameters: [Swift.AnyHashable : Any], onCompletion: @escaping (IBMMobileFoundationSwift.WLResponseSwift?, Swift.Error?) -> Swift.Void)
+  public func send(withFormParameters: [Swift.AnyHashable : Any], responseQueue: Dispatch.DispatchQueue, onCompletion: @escaping (IBMMobileFoundationSwift.WLResponseSwift?, Swift.Error?) -> Swift.Void)
+  public func send(withFormParameters: [Swift.AnyHashable : Any], delegate: Any)
+  public func send(withFormParameters: [Swift.AnyHashable : Any], responseQueue: Dispatch.DispatchQueue, delegate: Any)
+  public func send(withJSON: [Swift.AnyHashable : Any], onCompletion: @escaping (IBMMobileFoundationSwift.WLResponseSwift?, Swift.Error?) -> Swift.Void)
+  public func send(withJSON: [Swift.AnyHashable : Any], responseQueue: Dispatch.DispatchQueue, onCompletion: @escaping (IBMMobileFoundationSwift.WLResponseSwift?, Swift.Error?) -> Swift.Void)
+  public func send(withJSON: [Swift.AnyHashable : Any], delegate: Any)
+  public func send(withJSON: [Swift.AnyHashable : Any], responseQueue: Dispatch.DispatchQueue, delegate: Any)
+  public func send(withData: Foundation.Data, onCompletion: @escaping (IBMMobileFoundationSwift.WLResponseSwift?, Swift.Error?) -> Swift.Void)
+  public func send(withData: Foundation.Data, responseQueue: Dispatch.DispatchQueue, onCompletion: @escaping (IBMMobileFoundationSwift.WLResponseSwift?, Swift.Error?) -> Swift.Void)
+  public func send(withData: Foundation.Data, delegate: Any)
+  public func send(withData: Foundation.Data, responseQueue: Dispatch.DispatchQueue, delegate: Any)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class WLSimpleDataSharingSwift {
+  public static func setSharedToken(name: Swift.String, value: Swift.String) -> Swift.Bool
+  public static func getSharedToken(name: Swift.String) -> Swift.String
+  public static func clearSharedToken(name: Swift.String) -> Swift.Bool
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class WLClientSwift : ObjectiveC.NSObject, IBMMobileFirstPlatformFoundation.WLDelegate, IBMMobileFoundationSwift.WLDelegateSwift {
+  @objc public func onSuccess(_ response: IBMMobileFirstPlatformFoundation.WLResponse)
+  @objc public func onFailure(_ response: IBMMobileFirstPlatformFoundation.WLFailResponse)
+  public func onSuccess(response: IBMMobileFoundationSwift.WLResponseSwift)
+  public func onFailure(response: IBMMobileFoundationSwift.WLFailResponseSwift)
+  public static func sharedInstance() -> IBMMobileFoundationSwift.WLClientSwift
+  public func HTTPCookieStorage() -> Foundation.HTTPCookieStorage
+  public func send(request: Foundation.URLRequest, delegate: Any)
+  public func send(request: Foundation.URLRequest, responseQueue: Dispatch.DispatchQueue, delegate: Any)
+  public func invokeProcedure(invocationData: IBMMobileFirstPlatformFoundation.WLProcedureInvocationData, options: [Swift.AnyHashable : Any], with: IBMMobileFoundationSwift.WLDelegateSwift)
+  public func registerChallengeHandler(challengeHandler: IBMMobileFirstPlatformFoundation.BaseChallengeHandler)
+  public func addGlobalHeader(headerName: Swift.String, headerValue: Swift.String)
+  public func removeGlobalHeader(headerName: Swift.String)
+  public func getGlobalHeaders() -> [Swift.AnyHashable : Any]
+  public func getChallengeHandler(bySecurityCheck: Swift.String) -> IBMMobileFirstPlatformFoundation.BaseChallengeHandler
+  public func setHeartBeatInterval(interval: Swift.Int)
+  public func setServerUrl(url: Foundation.URL)
+  public func serverUrl() -> Foundation.URL
+  public func pinTrustedCertificatePublicKey(certificateFilename: Swift.String)
+  public func pinTrustedCertificatePublicKey(certificateFilenames: Swift.Array<Any>)
+  public func setDeviceDisplayName(displayName: Swift.String, onCompletion: @escaping (Swift.Error?) -> Swift.Void)
+  public func getDeviceDisplayName(onCompletion: @escaping (Swift.String?, Swift.Error?) -> Swift.Void)
+  @objc deinit
+}
+public protocol WLDelegateSwift {
+  func onSuccess(response: IBMMobileFoundationSwift.WLResponseSwift)
+  func onFailure(response: IBMMobileFoundationSwift.WLFailResponseSwift)
+}
+public enum OCLogTypeSwift : Swift.Int {
+  case OCLogger_TRACE
+  case OCLogger_DEBUG
+  case OCLogger_LOG
+  case OCLogger_INFO
+  case OCLogger_WARN
+  case OCLogger_ERROR
+  case OCLogger_FATAL
+  case OCLogger_ANALYTICS
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class OCLoggerSwift {
+  public static func getInstanceWithPackage(package: Swift.String!) -> IBMMobileFoundationSwift.OCLoggerSwift
+  public static func send()
+  public static func sendIfUnCaughtExceptionDetected()
+  public static func getCapture() -> Swift.Bool
+  public static func setCapture(flag: Swift.Bool)
+  public static func setShowLogsInConsole(flag: Swift.Bool)
+  public static func getFilters() -> [Swift.AnyHashable : Any]!
+  public static func setFilters(filters: [Swift.AnyHashable : Any]!)
+  public static func getMaxFileSize() -> Swift.Int32
+  public static func setMaxFileSize(bytes: Swift.Int32)
+  public static func getLevel() -> IBMMobileFoundationSwift.OCLogTypeSwift
+  public static func setLevel(level: IBMMobileFoundationSwift.OCLogTypeSwift)
+  public static func setAutoSendLogs(flag: Swift.Bool)
+  public static func updateConfigFromServer()
+  public static func isUnCaughtExceptionDetected() -> Swift.Bool
+  public func logWithLevel(withLevel: IBMMobileFoundationSwift.OCLogTypeSwift, message: Swift.String!, args: Swift.CVaListPointer, userInfo: [Swift.AnyHashable : Any])
+  @objc deinit
+}
+@objc open class SecurityCheckChallengeHandlerSwift : IBMMobileFirstPlatformFoundation.SecurityCheckChallengeHandler {
+  @objc override dynamic public init(securityCheck: Swift.String)
+  public func submitChallengeAnswer(answer: [Swift.AnyHashable : Any]!)
+  @objc override dynamic open func handleChallenge(_ challenge: [Swift.AnyHashable : Any]!)
+  @objc override dynamic open func handleSuccess(_ success: [Swift.AnyHashable : Any]!)
+  @objc override dynamic open func handleFailure(_ failure: [Swift.AnyHashable : Any]!)
+  open func handleChallenge(challengeResponse: [Swift.AnyHashable : Any]!)
+  open func handleSuccess(successResponse: [Swift.AnyHashable : Any]!)
+  open func handleFailure(failureResponse: [Swift.AnyHashable : Any]!)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class WLAnalyticsSwift : ObjectiveC.NSObject, IBMMobileFirstPlatformFoundation.WLDelegate, IBMMobileFoundationSwift.WLDelegateSwift {
+  @objc public func onSuccess(_ response: IBMMobileFirstPlatformFoundation.WLResponse)
+  @objc public func onFailure(_ response: IBMMobileFirstPlatformFoundation.WLFailResponse)
+  public func onSuccess(response: IBMMobileFoundationSwift.WLResponseSwift)
+  public func onFailure(response: IBMMobileFoundationSwift.WLFailResponseSwift)
+  public static var shared: IBMMobileFoundationSwift.WLAnalyticsSwift?
+  public static func sharedInstance() -> IBMMobileFoundationSwift.WLAnalyticsSwift
+  public func addDeviceEventListener(deviceEvent: IBMMobileFirstPlatformFoundation.DeviceEvent)
+  public func removeDeviceEventListener(deviceEvent: IBMMobileFirstPlatformFoundation.DeviceEvent)
+  public func enbale()
+  public func disable()
+  public func send()
+  public func send(withDelegate: IBMMobileFoundationSwift.WLDelegateSwift)
+  public func log(message: Swift.String, withMetadata: [Swift.AnyHashable : Any])
+  public func setUserContext(userContext: Swift.String)
+  public func unsetUserContext()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class WLFailResponseSwift {
+  public var errorMsg: Swift.String?
+  public var errorCode: Swift.String?
+  public var status: Swift.Int
+  @objc deinit
+}
+@objc open class GatewayChallengeHandlerSwift : IBMMobileFirstPlatformFoundation.GatewayChallengeHandler {
+  @objc override dynamic public init(gatewayName: Swift.String)
+  public func submitSuccess(response: IBMMobileFoundationSwift.WLResponseSwift)
+  public func canHandleResponse(response: IBMMobileFoundationSwift.WLResponseSwift) -> Swift.Bool
+  public func submitLoginForm(requestUrl: Swift.String, requestParameters: [Swift.AnyHashable : Any]!, requestHeaders: [Swift.AnyHashable : Any]!, requestTimeoutInMilliSeconds: Swift.Int32, requestMethod: Swift.String!)
+  @objc override dynamic open func onSuccess(_ response: IBMMobileFirstPlatformFoundation.WLResponse)
+  @objc override dynamic open func onFailure(_ response: IBMMobileFirstPlatformFoundation.WLFailResponse)
+  @objc override dynamic open func handleChallenge(_ response: IBMMobileFirstPlatformFoundation.WLResponse)
+  open func handleChallenge(response: IBMMobileFoundationSwift.WLResponseSwift)
+  open func onSuccess(successResponse: IBMMobileFoundationSwift.WLResponseSwift)
+  open func onFailure(failureResponse: IBMMobileFoundationSwift.WLFailResponseSwift)
+  @objc deinit
+}
+public class BaseChallengeHandlerSwift {
+  public init(name: Swift.String)
+  public func cancel()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class WLResponseSwift {
+  public var status: ObjectiveC.NSInteger
+  public var error: Swift.Error?
+  public var invocationContext: ObjectiveC.NSObject?
+  public var responseJSON: [Swift.AnyHashable : Any]?
+  public var responseText: Swift.String
+  public var headers: [Swift.AnyHashable : Any]?
+  public var responseData: Foundation.Data?
+  public var userInfoDict: [Swift.AnyHashable : Any]?
+  public static func returnObjcInstance(instance: IBMMobileFoundationSwift.WLResponseSwift) -> IBMMobileFirstPlatformFoundation.WLResponse
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class WLSecurityUtilsSwift {
+  public static func generateKey(withPassword: Swift.String, andSalt: Swift.String, andIterations: Swift.Int) throws -> Swift.String
+  public static func encryptText(text: Swift.String, withKey: Swift.String) throws -> [Swift.AnyHashable : Any]
+  public static func decrypt(withKey: Swift.String, andDictionary: [Swift.AnyHashable : Any]) throws -> Swift.String
+  public static func generateRandomString(withBytes: Swift.Int32) -> Swift.String
+  public static func getRandomStringFromServer(withBytes: Swift.Int32, timeout: Swift.Int32, onCompletion: @escaping (Foundation.URLResponse?, Foundation.Data?, Swift.Error?) -> Swift.Void)
+  public static func base64String(data: Foundation.Data, length: Swift.Int) -> Swift.String
+  public static func decodeBase64(withFiles: Foundation.FileHandle, output: Swift.String)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class WLAuthorizationManagerSwift {
+  public static func sharedInstance() -> IBMMobileFoundationSwift.WLAuthorizationManagerSwift
+  public func obtainAccessToken(forScope: Swift.String?, onCompletion: @escaping (IBMMobileFirstPlatformFoundation.AccessToken?, Swift.Error?) -> Swift.Void)
+  public func isGatewayResponse(response: IBMMobileFoundationSwift.WLResponseSwift?) -> Swift.Bool
+  public func logout(securityCheck: Swift.String, onCompletion: @escaping (Swift.Error?) -> Swift.Void)
+  public func login(securityCheck: Swift.String, credentials: [Swift.AnyHashable : Any], onCompletion: @escaping (Swift.Error?) -> Swift.Void)
+  public func isAuthorizationRequired(response: Foundation.URLResponse) -> Swift.Bool
+  public func isAuthorizationRequired(status: Swift.Int, headers: [Swift.AnyHashable : Any]) -> Swift.Bool
+  public func resourceScope(fromResponse: Foundation.URLResponse) -> Swift.String
+  public func clearAccessToken(accessToken: IBMMobileFirstPlatformFoundation.AccessToken)
+  public func setLoginTimeOut(timeOut: Foundation.NSNumber)
+  public func resourceScope(responseHeaders: [Swift.AnyHashable : Any]) -> Swift.String
+  @objc deinit
+}
+extension IBMMobileFoundationSwift.OCLogTypeSwift : Swift.Equatable {}
+extension IBMMobileFoundationSwift.OCLogTypeSwift : Swift.Hashable {}
+extension IBMMobileFoundationSwift.OCLogTypeSwift : Swift.RawRepresentable {}

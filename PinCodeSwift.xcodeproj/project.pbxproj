@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19643DD21C620A200055D883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19643DD11C620A200055D883 /* AppDelegate.swift */; };
+		19643DD41C620A200055D883 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19643DD31C620A200055D883 /* ViewController.swift */; };
+		19643DD71C620A200055D883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19643DD51C620A200055D883 /* Main.storyboard */; };
+		19643DD91C620A200055D883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19643DD81C620A200055D883 /* Assets.xcassets */; };
+		19643DDC1C620A200055D883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19643DDA1C620A200055D883 /* LaunchScreen.storyboard */; };
+		19643DE41C620BE70055D883 /* mfpclient.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19643DE31C620BE70055D883 /* mfpclient.plist */; };
+		19643DE61C6217380055D883 /* PinCodeChallengeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19643DE51C6217380055D883 /* PinCodeChallengeHandler.swift */; };
+		B20D002944453064B834481D /* Pods_PincodeSwiftAppClip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC7DB0AA428ECEB6CF98524 /* Pods_PincodeSwiftAppClip.framework */; };
+		B7F1C07E2518AF670097027A /* PincodeSwiftAppClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F1C07D2518AF670097027A /* PincodeSwiftAppClipApp.swift */; };
+		B7F1C0802518AF670097027A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F1C07F2518AF670097027A /* ContentView.swift */; };
+		B7F1C0822518AF6A0097027A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7F1C0812518AF6A0097027A /* Assets.xcassets */; };
+		B7F1C0852518AF6A0097027A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7F1C0842518AF6A0097027A /* Preview Assets.xcassets */; };
+		B7F1C08A2518AF6A0097027A /* PincodeSwiftAppClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = B7F1C07B2518AF670097027A /* PincodeSwiftAppClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B7F1C0942518B01F0097027A /* mfpclient.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19643DE31C620BE70055D883 /* mfpclient.plist */; };
+		F117972859EA062282EA3CB9 /* Pods_PinCodeSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91699928E33E5059EF22FDA4 /* Pods_PinCodeSwift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7F1C0882518AF6A0097027A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19643DC61C620A200055D883 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7F1C07A2518AF670097027A;
+			remoteInfo = PincodeSwiftAppClip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B7F1C08B2518AF6A0097027A /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				B7F1C08A2518AF6A0097027A /* PincodeSwiftAppClip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		19643DCE1C620A200055D883 /* PinCodeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinCodeSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19643DD11C620A200055D883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19643DD31C620A200055D883 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19643DD61C620A200055D883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19643DD81C620A200055D883 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19643DDB1C620A200055D883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19643DDD1C620A200055D883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19643DE31C620BE70055D883 /* mfpclient.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mfpclient.plist; sourceTree = "<group>"; };
+		19643DE51C6217380055D883 /* PinCodeChallengeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodeChallengeHandler.swift; sourceTree = "<group>"; };
+		19C4BD4B1DF6A07B00C1C171 /* PinCodeSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PinCodeSwift.entitlements; sourceTree = "<group>"; };
+		4656CFF302C17A6F1A531937 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C0075FB8D1F8F757763C4A1 /* Pods-PinCodeSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinCodeSwift.release.xcconfig"; path = "Target Support Files/Pods-PinCodeSwift/Pods-PinCodeSwift.release.xcconfig"; sourceTree = "<group>"; };
+		7EC7DB0AA428ECEB6CF98524 /* Pods_PincodeSwiftAppClip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PincodeSwiftAppClip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		900E8518067EE49A2CD7A7B1 /* Pods-PincodeSwiftAppClip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PincodeSwiftAppClip.debug.xcconfig"; path = "Target Support Files/Pods-PincodeSwiftAppClip/Pods-PincodeSwiftAppClip.debug.xcconfig"; sourceTree = "<group>"; };
+		91699928E33E5059EF22FDA4 /* Pods_PinCodeSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinCodeSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C503A46BF3F3F3CE683440D /* Pods-PincodeSwiftAppClip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PincodeSwiftAppClip.release.xcconfig"; path = "Target Support Files/Pods-PincodeSwiftAppClip/Pods-PincodeSwiftAppClip.release.xcconfig"; sourceTree = "<group>"; };
+		B7F1C07B2518AF670097027A /* PincodeSwiftAppClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PincodeSwiftAppClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7F1C07D2518AF670097027A /* PincodeSwiftAppClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PincodeSwiftAppClipApp.swift; sourceTree = "<group>"; };
+		B7F1C07F2518AF670097027A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B7F1C0812518AF6A0097027A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7F1C0842518AF6A0097027A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B7F1C0862518AF6A0097027A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7F1C0872518AF6A0097027A /* PincodeSwiftAppClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PincodeSwiftAppClip.entitlements; sourceTree = "<group>"; };
+		C859F54803084C9930D94706 /* Pods-PinCodeSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinCodeSwift.debug.xcconfig"; path = "Target Support Files/Pods-PinCodeSwift/Pods-PinCodeSwift.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19643DCB1C620A200055D883 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F117972859EA062282EA3CB9 /* Pods_PinCodeSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F1C0782518AF670097027A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20D002944453064B834481D /* Pods_PincodeSwiftAppClip.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19643DC51C620A200055D883 = {
+			isa = PBXGroup;
+			children = (
+				19643DE31C620BE70055D883 /* mfpclient.plist */,
+				19643DD01C620A200055D883 /* PinCodeSwift */,
+				B7F1C07C2518AF670097027A /* PincodeSwiftAppClip */,
+				19643DCF1C620A200055D883 /* Products */,
+				8A45B7E7415836345CC57A1B /* Frameworks */,
+				A692EC213EDA6F0387CFDDA5 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		19643DCF1C620A200055D883 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19643DCE1C620A200055D883 /* PinCodeSwift.app */,
+				B7F1C07B2518AF670097027A /* PincodeSwiftAppClip.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19643DD01C620A200055D883 /* PinCodeSwift */ = {
+			isa = PBXGroup;
+			children = (
+				19C4BD4B1DF6A07B00C1C171 /* PinCodeSwift.entitlements */,
+				19643DD11C620A200055D883 /* AppDelegate.swift */,
+				19643DD31C620A200055D883 /* ViewController.swift */,
+				19643DD51C620A200055D883 /* Main.storyboard */,
+				19643DD81C620A200055D883 /* Assets.xcassets */,
+				19643DDA1C620A200055D883 /* LaunchScreen.storyboard */,
+				19643DDD1C620A200055D883 /* Info.plist */,
+				19643DE51C6217380055D883 /* PinCodeChallengeHandler.swift */,
+			);
+			path = PinCodeSwift;
+			sourceTree = "<group>";
+		};
+		8A45B7E7415836345CC57A1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4656CFF302C17A6F1A531937 /* Pods.framework */,
+				91699928E33E5059EF22FDA4 /* Pods_PinCodeSwift.framework */,
+				7EC7DB0AA428ECEB6CF98524 /* Pods_PincodeSwiftAppClip.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A692EC213EDA6F0387CFDDA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C859F54803084C9930D94706 /* Pods-PinCodeSwift.debug.xcconfig */,
+				5C0075FB8D1F8F757763C4A1 /* Pods-PinCodeSwift.release.xcconfig */,
+				900E8518067EE49A2CD7A7B1 /* Pods-PincodeSwiftAppClip.debug.xcconfig */,
+				9C503A46BF3F3F3CE683440D /* Pods-PincodeSwiftAppClip.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B7F1C07C2518AF670097027A /* PincodeSwiftAppClip */ = {
+			isa = PBXGroup;
+			children = (
+				B7F1C07D2518AF670097027A /* PincodeSwiftAppClipApp.swift */,
+				B7F1C07F2518AF670097027A /* ContentView.swift */,
+				B7F1C0812518AF6A0097027A /* Assets.xcassets */,
+				B7F1C0862518AF6A0097027A /* Info.plist */,
+				B7F1C0872518AF6A0097027A /* PincodeSwiftAppClip.entitlements */,
+				B7F1C0832518AF6A0097027A /* Preview Content */,
+			);
+			path = PincodeSwiftAppClip;
+			sourceTree = "<group>";
+		};
+		B7F1C0832518AF6A0097027A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B7F1C0842518AF6A0097027A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19643DCD1C620A200055D883 /* PinCodeSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19643DE01C620A200055D883 /* Build configuration list for PBXNativeTarget "PinCodeSwift" */;
+			buildPhases = (
+				79E57DB414EA63198986BB23 /* [CP] Check Pods Manifest.lock */,
+				19643DCA1C620A200055D883 /* Sources */,
+				19643DCB1C620A200055D883 /* Frameworks */,
+				19643DCC1C620A200055D883 /* Resources */,
+				B7F1C08B2518AF6A0097027A /* Embed App Clips */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7F1C0892518AF6A0097027A /* PBXTargetDependency */,
+			);
+			name = PinCodeSwift;
+			productName = PinCodeSwift;
+			productReference = 19643DCE1C620A200055D883 /* PinCodeSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7F1C07A2518AF670097027A /* PincodeSwiftAppClip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7F1C08E2518AF6A0097027A /* Build configuration list for PBXNativeTarget "PincodeSwiftAppClip" */;
+			buildPhases = (
+				D73D6F237EC94A85EC96844D /* [CP] Check Pods Manifest.lock */,
+				B7F1C0772518AF670097027A /* Sources */,
+				B7F1C0782518AF670097027A /* Frameworks */,
+				B7F1C0792518AF670097027A /* Resources */,
+				049CE89D92DB85B69CD0D96D /* [CP] Embed Pods Frameworks */,
+				6ECD686F4597680DCE5077C4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PincodeSwiftAppClip;
+			productName = PincodeSwiftAppClip;
+			productReference = B7F1C07B2518AF670097027A /* PincodeSwiftAppClip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19643DC61C620A200055D883 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Sample;
+				TargetAttributes = {
+					19643DCD1C620A200055D883 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = Z85852MG3R;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					B7F1C07A2518AF670097027A = {
+						CreatedOnToolsVersion = 12.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 19643DC91C620A200055D883 /* Build configuration list for PBXProject "PinCodeSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 19643DC51C620A200055D883;
+			productRefGroup = 19643DCF1C620A200055D883 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19643DCD1C620A200055D883 /* PinCodeSwift */,
+				B7F1C07A2518AF670097027A /* PincodeSwiftAppClip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19643DCC1C620A200055D883 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19643DDC1C620A200055D883 /* LaunchScreen.storyboard in Resources */,
+				19643DD91C620A200055D883 /* Assets.xcassets in Resources */,
+				19643DD71C620A200055D883 /* Main.storyboard in Resources */,
+				19643DE41C620BE70055D883 /* mfpclient.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F1C0792518AF670097027A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F1C0942518B01F0097027A /* mfpclient.plist in Resources */,
+				B7F1C0852518AF6A0097027A /* Preview Assets.xcassets in Resources */,
+				B7F1C0822518AF6A0097027A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		049CE89D92DB85B69CD0D96D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PincodeSwiftAppClip/Pods-PincodeSwiftAppClip-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/IBMMobileFirstPlatformFoundation/IBMMobileFirstPlatformFoundation.framework/IBMMobileFirstPlatformFoundation",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/IBMMobileFirstPlatformFoundation/IBMMobileFoundationSwift.framework/IBMMobileFoundationSwift",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBMMobileFirstPlatformFoundation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBMMobileFoundationSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PincodeSwiftAppClip/Pods-PincodeSwiftAppClip-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6ECD686F4597680DCE5077C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PincodeSwiftAppClip/Pods-PincodeSwiftAppClip-resources.sh",
+				"${PODS_ROOT}/IBMMobileFirstPlatformFoundation/IBMMobileFirstPlatformFoundation/Resources/Localizations.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Localizations.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PincodeSwiftAppClip/Pods-PincodeSwiftAppClip-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79E57DB414EA63198986BB23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PinCodeSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D73D6F237EC94A85EC96844D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PincodeSwiftAppClip-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19643DCA1C620A200055D883 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19643DE61C6217380055D883 /* PinCodeChallengeHandler.swift in Sources */,
+				19643DD41C620A200055D883 /* ViewController.swift in Sources */,
+				19643DD21C620A200055D883 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F1C0772518AF670097027A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F1C0802518AF670097027A /* ContentView.swift in Sources */,
+				B7F1C07E2518AF670097027A /* PincodeSwiftAppClipApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7F1C0892518AF6A0097027A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7F1C07A2518AF670097027A /* PincodeSwiftAppClip */;
+			targetProxy = B7F1C0882518AF6A0097027A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19643DD51C620A200055D883 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19643DD61C620A200055D883 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19643DDA1C620A200055D883 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19643DDB1C620A200055D883 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19643DDE1C620A200055D883 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19643DDF1C620A200055D883 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19643DE11C620A200055D883 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C859F54803084C9930D94706 /* Pods-PinCodeSwift.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PinCodeSwift/PinCodeSwift.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development: Surajit Dhara (RU5A8Q65SQ)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Z85852MG3R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods";
+				INFOPLIST_FILE = PinCodeSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.persistent.pmfCommon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = pmfDevCommonProfile;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		19643DE21C620A200055D883 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C0075FB8D1F8F757763C4A1 /* Pods-PinCodeSwift.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PinCodeSwift/PinCodeSwift.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development: Surajit Dhara (RU5A8Q65SQ)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Z85852MG3R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods";
+				INFOPLIST_FILE = PinCodeSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.persistent.pmfCommon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = pmfDevCommonProfile;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B7F1C08C2518AF6A0097027A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 900E8518067EE49A2CD7A7B1 /* Pods-PincodeSwiftAppClip.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = PincodeSwiftAppClip/PincodeSwiftAppClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PincodeSwiftAppClip/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/**";
+				INFOPLIST_FILE = PincodeSwiftAppClip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.PinCodeSwift.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7F1C08D2518AF6A0097027A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C503A46BF3F3F3CE683440D /* Pods-PincodeSwiftAppClip.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = PincodeSwiftAppClip/PincodeSwiftAppClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PincodeSwiftAppClip/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/**";
+				INFOPLIST_FILE = PincodeSwiftAppClip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.PinCodeSwift.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19643DC91C620A200055D883 /* Build configuration list for PBXProject "PinCodeSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19643DDE1C620A200055D883 /* Debug */,
+				19643DDF1C620A200055D883 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19643DE01C620A200055D883 /* Build configuration list for PBXNativeTarget "PinCodeSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19643DE11C620A200055D883 /* Debug */,
+				19643DE21C620A200055D883 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7F1C08E2518AF6A0097027A /* Build configuration list for PBXNativeTarget "PincodeSwiftAppClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7F1C08C2518AF6A0097027A /* Debug */,
+				B7F1C08D2518AF6A0097027A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19643DC61C620A200055D883 /* Project object */;
+}

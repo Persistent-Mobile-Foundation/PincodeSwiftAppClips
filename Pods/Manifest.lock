@@ -1,0 +1,16 @@
+PODS:
+  - IBMMobileFirstPlatformFoundation (8.0.2023050811)
+
+DEPENDENCIES:
+  - IBMMobileFirstPlatformFoundation
+
+SPEC REPOS:
+  trunk:
+    - IBMMobileFirstPlatformFoundation
+
+SPEC CHECKSUMS:
+  IBMMobileFirstPlatformFoundation: f2fa3d7bea7c006fca67d2b0d099f35db0471516
+
+PODFILE CHECKSUM: 7e98c6b757eb5e55d977ad07689a35c3c2452470
+
+COCOAPODS: 1.15.2
